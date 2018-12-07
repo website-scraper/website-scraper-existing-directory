@@ -4,15 +4,18 @@ const fs = require('fs-extra');
 const ExistingDirectoryPlugin = require('../index');
 
 describe('Existing Directory Plugin', () => {
-	after('remove saved index.html from test directory', () => fs.removeSync('directory-to-test/index.html'));
+	const directory = __dirname + '/directory-for-test';
+	const filename = directory + '/index.html';
+
+	after('remove saved index.html from test directory', () => fs.removeSync(filename));
 
 	it('should save file to existing directory', async () => {
 		const result = await scrape({
 			urls: ['http://example.com'],
-			directory: 'directory-to-test',
+			directory: directory,
 			plugins: [ new ExistingDirectoryPlugin() ]
 		});
 
-		expect(fs.existsSync('directory-to-test/index.html')).to.eql(true);
+		expect(fs.existsSync(filename)).to.eql(true);
 	});
 });
