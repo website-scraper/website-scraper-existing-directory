@@ -1,0 +1,37 @@
+{
+  "name": "website-scraper-existing-directory",
+  "version": "0.1.0",
+  "description": "Plugin for website-scraper which allows to save resources to existing directory",
+  "readmeFilename": "README.md",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/website-scraper/website-scraper-existing-directory.git"
+  },
+  "keywords": [
+    "website-scraper"
+  ],
+  "author": "Sophia Antipenko <sophia@antipenko.pp.ua>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/website-scraper/website-scraper-existing-directory/issues"
+  },
+  "homepage": "https://github.com/website-scraper/website-scraper-existing-directory#readme",
+  "dependencies": {
+    "fs-extra": "^7.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "website-scraper": "^4.0.0"
+  },
+  "peerDependencies": {
+    "website-scraper": "^4.0.0"
+  },
+  "files": [
+    "index.js"
+  ]
+}
