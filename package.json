@@ -5,7 +5,8 @@
   "readmeFilename": "README.md",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "c8 --all --reporter=text --reporter=lcov mocha --recursive && npm run eslint",
+    "eslint": "eslint index.js"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,9 @@
     "fs-extra": "^7.0.1"
   },
   "devDependencies": {
+    "c8": "^7.10.0",
     "chai": "^4.2.0",
+    "eslint": "^8.5.0",
     "mocha": "^5.2.0",
     "website-scraper": "^4.0.0"
   },
