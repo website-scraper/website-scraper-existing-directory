@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/website-scraper/website-scraper-existing-directory#readme",
   "dependencies": {
-    "fs-extra": "^7.0.1"
+    "fs-extra": "^10.0.0"
   },
   "devDependencies": {
     "c8": "^7.10.0",
