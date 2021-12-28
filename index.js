@@ -1,5 +1,5 @@
-const path = require('path');
-const fs = require('fs-extra');
+import path from 'path';
+import fs from 'fs-extra';
 
 class SaveResourceToExistingDirectoryPlugin {
 	apply (registerAction) {
@@ -22,4 +22,4 @@ class SaveResourceToExistingDirectoryPlugin {
 	}
 }
 
-module.exports = SaveResourceToExistingDirectoryPlugin;
+export default SaveResourceToExistingDirectoryPlugin;

@@ -1,9 +1,12 @@
 {
   "name": "website-scraper-existing-directory",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Plugin for website-scraper which allows to save resources to existing directory",
   "readmeFilename": "README.md",
-  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
   "scripts": {
     "test": "c8 --all --reporter=text --reporter=lcov mocha --recursive",
     "eslint": "eslint index.js"
@@ -38,6 +41,6 @@
     "index.js"
   ],
   "engines": {
-    "node": ">=14"
+    "node": ">=14.14"
   }
 }

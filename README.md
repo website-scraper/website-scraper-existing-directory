@@ -10,8 +10,8 @@ Plugin for [website-scraper](https://github.com/website-scraper/node-website-scr
 Please keep in mind that saving to existing directory may overwrite your files. Be careful with it!
 
 ## Requirements
-* nodejs version >= 14
-* website-scraper version >= 4
+* nodejs version >= 14.14
+* website-scraper version >= 5
 
 ## Installation
 ```sh
@@ -20,10 +20,10 @@ npm install website-scraper website-scraper-existing-directory
 
 ## Usage
 ```javascript
-const scrape = require('website-scraper');
-const SaveToExistingDirectoryPlugin = require('website-scraper-existing-directory');
+import scrape from 'website-scraper';
+import SaveToExistingDirectoryPlugin from 'website-scraper-existing-directory';
 
-scrape({
+await scrape({
     urls: ['http://example.com'],
     directory: '/path/to/save',
     plugins: [ new SaveToExistingDirectoryPlugin() ]
