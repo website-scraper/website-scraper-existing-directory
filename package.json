@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/website-scraper/website-scraper-existing-directory#readme",
   "dependencies": {
-    "fs-extra": "^10.0.0"
+    "fs-extra": "^11.1.0"
   },
   "devDependencies": {
     "c8": "^7.10.0",
