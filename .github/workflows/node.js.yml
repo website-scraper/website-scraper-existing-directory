@@ -44,7 +44,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Publish codeclimate code coverage
         if: ${{ matrix.node-version == '18' && matrix.os == 'ubuntu-latest' }}
-        uses: paambaati/codeclimate-action@v4.0.0
+        uses: paambaati/codeclimate-action@v5.0.0
         env:
           CC_TEST_REPORTER_ID: 0653d2f9752a6c6febd3bb7cabfec48439868a02350b1c46da7d60837a42ad93
         with:
