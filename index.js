@@ -16,7 +16,7 @@ class SaveResourceToExistingDirectoryPlugin {
 		registerAction('saveResource', async ({resource}) => {
 			const filename = path.join(absoluteDirectoryPath, resource.getFilename());
 			const text = resource.getText();
-			await fs.outputFile(filename, text, { encoding: 'binary' });
+			await fs.outputFile(filename, text, { encoding: resource.getEncoding() });
 			loadedResources.push(resource);
 		});
 	}
