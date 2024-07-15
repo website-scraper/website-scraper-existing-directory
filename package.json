@@ -30,7 +30,7 @@
   "devDependencies": {
     "c8": "^9.1.0",
     "chai": "^4.2.0",
-    "eslint": "^8.5.0",
+    "eslint": "^9.7.0",
     "mocha": "^10.0.0",
     "website-scraper": "^5.2.0"
   },
