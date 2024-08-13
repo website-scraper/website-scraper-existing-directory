@@ -1,9 +1,7 @@
-import chai from 'chai';
+import { expect } from 'chai';
 import scrape from 'website-scraper';
 import fs from 'fs-extra';
 import ExistingDirectoryPlugin from '../index.js';
-
-const { expect } = chai;
 
 describe('Existing Directory Plugin', () => {
 	const directory = './test/directory-for-test';
