@@ -10,7 +10,7 @@ Plugin for [website-scraper](https://github.com/website-scraper/node-website-scr
 Please keep in mind that saving to existing directory may overwrite your files. Be careful with it!
 
 ## Requirements
-* nodejs version >= 14.14
+* nodejs version >= 18.17
 * website-scraper version >= 5
 
 ## Installation
