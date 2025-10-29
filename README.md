@@ -9,6 +9,12 @@ Plugin for [website-scraper](https://github.com/website-scraper/node-website-scr
 
 Please keep in mind that saving to existing directory may overwrite your files. Be careful with it!
 
+## Sponsors
+Maintenance of this project is made possible by all the [contributors](https://github.com/website-scraper/website-scraper-existing-directory/graphs/contributors) and [sponsors](https://github.com/sponsors/s0ph1e).
+If you'd like to sponsor this project and have your avatar or company logo appear below [click here](https://github.com/sponsors/s0ph1e). 💖
+
+<!-- sponsors --><!-- sponsors -->
+
 ## Requirements
 * nodejs version >= 18.17
 * website-scraper version >= 5
