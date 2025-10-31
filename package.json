@@ -1,6 +1,6 @@
 {
   "name": "website-scraper-existing-directory",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Plugin for website-scraper which allows saving resources to the existing directory",
   "readmeFilename": "README.md",
   "type": "module",
