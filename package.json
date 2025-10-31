@@ -18,7 +18,7 @@
   "keywords": [
     "website-scraper"
   ],
-  "author": "Sofiia Antypenko <sophia@antipenko.pp.ua>",
+  "author": "Sofiia Antypenko <sofiia@antypenko.dev>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/website-scraper/website-scraper-existing-directory/issues"
@@ -32,15 +32,15 @@
     "chai": "^6.0.1",
     "eslint": "^8.5.0",
     "mocha": "^11.0.1",
-    "website-scraper": "^5.2.0"
+    "website-scraper": "^6.0.0"
   },
   "peerDependencies": {
-    "website-scraper": "^5.2.0"
+    "website-scraper": "^6.0.0"
   },
   "files": [
     "index.js"
   ],
   "engines": {
-    "node": ">=18.17"
+    "node": ">=20"
   }
 }
