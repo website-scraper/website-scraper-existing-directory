@@ -1,5 +1,12 @@
 import path from 'path';
-import fs from 'fs-extra';
+import fs from 'fs/promises';
+
+async function outputFile (file, data, encoding) {
+	const dir = path.dirname(file);
+	await fs.mkdir(dir, { recursive: true });
+
+	return fs.writeFile(file, data, { encoding });
+}
 
 class SaveResourceToExistingDirectoryPlugin {
 	apply (registerAction) {
@@ -16,7 +23,7 @@ class SaveResourceToExistingDirectoryPlugin {
 		registerAction('saveResource', async ({resource}) => {
 			const filename = path.join(absoluteDirectoryPath, resource.getFilename());
 			const text = resource.getText();
-			await fs.outputFile(filename, text, { encoding: resource.getEncoding() });
+			await outputFile(filename, text, resource.getEncoding());
 			loadedResources.push(resource);
 		});
 	}

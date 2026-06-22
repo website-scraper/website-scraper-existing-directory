@@ -1,13 +1,13 @@
 import { expect } from 'chai';
 import scrape from 'website-scraper';
-import fs from 'fs-extra';
+import fs from 'fs';
 import ExistingDirectoryPlugin from '../index.js';
 
 describe('Existing Directory Plugin', () => {
 	const directory = './test/directory-for-test';
 	const filename = directory + '/index.html';
 
-	after('remove saved index.html from test directory', () => fs.removeSync(filename));
+	after('remove saved index.html from test directory', () => fs.rmSync(filename, { recursive: true, force: true }));
 
 	it('should save file to existing directory', async () => {
 		const result = await scrape({

@@ -24,9 +24,6 @@
     "url": "https://github.com/website-scraper/website-scraper-existing-directory/issues"
   },
   "homepage": "https://github.com/website-scraper/website-scraper-existing-directory#readme",
-  "dependencies": {
-    "fs-extra": "^11.1.0"
-  },
   "devDependencies": {
     "c8": "^11.0.0",
     "chai": "^6.0.1",
